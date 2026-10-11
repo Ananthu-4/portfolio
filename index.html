@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ananthu Krishnan | Aspiring Associate Product Manager</title>
+<meta name="description" content="Portfolio of Ananthu Krishnan, an aspiring APM with a Computer Science background. Three product case studies: assignment reminders, a founder-investor platform, and a disaster safety system.">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f0f13;--bg2:#17171d;--ink:#ecebf3;--mut:#a09fb0;--line:#2a2a35;--ac:#8b7cff;--ac2:#5aa2ff;--note:#e8d98a;--r:14px;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:light){:root:not([data-theme=dark]){--bg:#f7f6fb;--bg2:#fff;--ink:#17161f;--mut:#5d5b6e;--line:#dedbea;--ac:#5b49e0;--ac2:#2c6bd6;--note:#f3e7a1}}
+:root[data-theme=light]{--bg:#f7f6fb;--bg2:#fff;--ink:#17161f;--mut:#5d5b6e;--line:#dedbea;--ac:#5b49e0;--ac2:#2c6bd6;--note:#f3e7a1}
+:root[data-theme=dark]{--bg:#0f0f13;--bg2:#17171d;--ink:#ecebf3;--mut:#a09fb0;--line:#2a2a35;--ac:#8b7cff;--ac2:#5aa2ff;--note:#e8d98a}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 'Schibsted Grotesk',system-ui,sans-serif}
+a{color:inherit}:focus-visible{outline:2px solid var(--ac2);outline-offset:3px}
+.w{max-width:1080px;margin:auto;padding:0 22px}section{padding:84px 0}
+h1,h2,h3{line-height:1.15;margin:0;letter-spacing:-.02em}h1{font-size:clamp(2.2rem,5.5vw,3.9rem)}h2{font-size:clamp(1.7rem,3.5vw,2.4rem);margin-bottom:12px}
+p{margin:0 0 12px;max-width:68ch}.mut{color:var(--mut)}
+nav{position:sticky;top:0;z-index:9;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+nav .w{display:flex;align-items:center;gap:6px;height:60px;overflow-x:auto}
+nav b{margin-right:auto;white-space:nowrap}nav a{text-decoration:none;color:var(--mut);padding:6px 11px;border-radius:8px;font-size:.93rem;white-space:nowrap}nav a:hover{color:var(--ink);background:var(--bg2)}
+button{font:inherit;cursor:pointer}.tg{background:var(--bg2);border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:5px 10px}
+.btn{display:inline-block;padding:11px 20px;border-radius:10px;border:1px solid var(--line);text-decoration:none;font-weight:500;background:transparent;color:var(--ink)}
+.btn.p{background:var(--ac);border-color:var(--ac);color:#fff}.btn:hover{filter:brightness(1.12)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-top:70px}
+.hero .sub{font-size:1.08rem;color:var(--mut);margin:20px 0 26px}.cta{display:flex;gap:12px;flex-wrap:wrap}
+.viz{position:relative;height:340px}.viz>*{position:absolute}
+.wf{left:0;top:10px;width:58%;background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:12px}
+.wf i{display:block;height:9px;border-radius:5px;background:var(--line);margin:8px 0}.wf i.a{background:var(--ac);width:40%}.wf .bx{height:56px;border-radius:8px;border:1px dashed var(--mut);margin-top:10px}
+.rm{left:20%;bottom:20px;width:78%;background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:12px;font-size:.78rem}
+.rm div{height:16px;border-radius:5px;margin:6px 0;color:#fff;padding-left:7px;line-height:16px;font-size:.68rem}
+.sn{width:120px;padding:10px;background:var(--note);color:#2b2810;border-radius:4px;font-size:.78rem;line-height:1.35;transform:rotate(4deg);right:4px;top:0;box-shadow:0 6px 14px #0004}
+.sn.b{right:auto;left:62%;top:105px;transform:rotate(-5deg);width:105px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:10px}
+.card .th{height:96px;border-radius:10px;border:1px solid var(--line);padding:10px;display:flex;gap:6px;align-items:flex-end;overflow:hidden}
+.th s{display:block;flex:1;border-radius:5px 5px 0 0;background:var(--ac);opacity:.8;text-decoration:none}
+.pill{font-size:.78rem;border:1px solid var(--line);border-radius:99px;padding:2px 10px;color:var(--mut);align-self:flex-start}
+.card h3{font-size:1.2rem}.card .btn{margin-top:auto;text-align:center;cursor:pointer}
+#cs{display:none;margin-top:46px;border-top:1px solid var(--line);padding-top:34px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:20px 0}
+.tabs button{background:transparent;border:1px solid var(--line);color:var(--mut);border-radius:8px;padding:6px 12px;font-size:.88rem}
+.tabs button[aria-selected=true]{background:var(--ac);border-color:var(--ac);color:#fff}
+.panel{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:26px;animation:f .25s}
+@keyframes f{from{opacity:.3;transform:translateY(5px)}}@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+.panel ul{padding-left:20px;margin:0}.panel li{margin:7px 0}
+.flag{display:inline-block;background:color-mix(in srgb,var(--note) 25%,transparent);border:1px solid var(--note);border-radius:6px;padding:2px 9px;font-size:.82rem;margin-bottom:12px}
+table{border-collapse:collapse;width:100%;margin-top:14px;font-size:.92rem}td,th{border-bottom:1px solid var(--line);padding:8px;text-align:left}
+.tw{overflow-x:auto}
+.g4{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:24px}
+.g4 .card ul{margin:0;padding-left:18px}
+.flow{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0}
+.flow button{background:var(--bg2);border:1px solid var(--line);color:var(--ink);border-radius:99px;padding:8px 16px}
+.flow button[aria-pressed=true]{background:var(--ac);border-color:var(--ac);color:#fff}
+#fd{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:20px;min-height:90px}
+.ph{border:1px dashed var(--mut);border-radius:10px;padding:12px 16px;color:var(--mut);margin:8px 0}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--mut);font-size:.88rem}
+@media(max-width:820px){.hero,.g4{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.viz{height:300px}section{padding:60px 0}}
+</style></head><body>
+<nav aria-label="Main"><div class="w"><b>Ananthu Krishnan</b>
+<a href="#home">Home</a><a href="#about">About</a><a href="#work">Case Studies</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+<button class="tg" id="th" aria-label="Toggle light or dark theme">Theme</button></div></nav>
+<main>
+<section id="home"><div class="w hero"><div>
+<h1>Turning Real-World Problems Into Thoughtful Digital Products.</h1>
+<p class="sub">I'm Ananthu Krishnan, an aspiring Associate Product Manager with a Computer Science background and an interest in product strategy, user experience, feature discovery, and building solutions that solve meaningful problems.</p>
+<div class="cta"><a class="btn p" href="#work">Explore My Case Studies</a><a class="btn" href="#resume">View My Resume</a></div></div>
+<div class="viz" aria-hidden="true">
+<div class="wf"><i class="a"></i><i></i><i style="width:70%"></i><div class="bx"></div><i style="width:55%"></i></div>
+<div class="sn">Who feels this most? Validate first.</div><div class="sn b">MVP = smallest test</div>
+<div class="rm"><b>Roadmap (illustrative)</b><div style="background:var(--ac);width:45%">Discover</div><div style="background:var(--ac2);width:65%;margin-left:20%">Prototype</div><div style="background:#4aa58a;width:50%;margin-left:45%">Test</div></div></div></div></section>
+
+<section id="about"><div class="w"><h2>About</h2>
+<p>I'm an aspiring APM, not an experienced product manager. I'm building practical product skills by taking real problems and working through them the way a product team would: who is affected, what we know versus assume, what to build first, and how we'd know it worked.</p>
+<p>What draws me to product work:</p>
+<div class="g4"><div class="card"><ul><li>Understanding user problems and unmet needs</li><li>Brainstorming and evaluating product features</li><li>Turning ideas into structured requirements</li></ul></div>
+<div class="card"><ul><li>Designing simple, intuitive experiences</li><li>Collaborating across design, engineering, and business</li><li>Using data and feedback to improve products</li></ul></div></div>
+<p style="margin-top:20px">I hold a BSc in Computer Science and am completing an MCA (2024 to 2026), with hands-on work in Python, Java, React and Django. That foundation helps me ask better questions about feasibility and trade-offs when working with engineers.</p></div></section>
+
+<section id="work"><div class="w"><h2>Case Studies</h2>
+<p class="mut">Three concept projects, each a different product challenge. All are self-initiated concepts. Findings are framed as hypotheses until tested.</p>
+<div class="cards" id="cards"></div>
+<div id="cs" tabindex="-1"></div></div></section>
+
+<section id="built"><div class="w"><h2>Other Projects and Background</h2><p class="mut">Built projects where I practised discovery, scoping and prioritization.</p><div class="g4"><div class="card"><h3>Smart Museum Management System</h3><span class="pill">React, Java, Spring Boot, MongoDB</span><ul><li>Ran lightweight discovery and a competitive scan; defined personas and visitor journeys.</li><li>Prioritized six features (AI artifact recognition, ticket booking, audio guides, recommendations, virtual exhibitions, auctions) on value, relevance, effort and feasibility.</li><li>Turned priorities into requirements and user stories; contributed to development and data modelling.</li></ul></div><div class="card"><h3>Personal Data Manager</h3><span class="pill">Python, Django, MySQL, JavaScript</span><ul><li>Scoped one centralized tool for routines, meetings, reminders, notes and a watchlist.</li><li>Reviewed similar apps to avoid duplicating solutions.</li><li>Built login, scheduled reminders and a responsive interface.</li></ul></div><div class="card"><h3>Campaign Operations</h3><span class="pill">Stakeholder coordination, Bangalore</span><ul><li>Coordinated promoters, field agents and clients across retail outlets.</li><li>Resolved on-site issues in real time to protect customer satisfaction.</li></ul></div><div class="card"><h3>Education</h3><ul><li>MCA, Bangalore North University (2024 to 2026)</li><li>BSc Computer Science, University of Kerala (2021 to 2023)</li></ul></div></div></div></section>
+<section id="how"><div class="w"><h2>How I Think About Products</h2><p class="mut">Select a step.</p>
+<div class="flow" id="flow"></div><div id="fd" aria-live="polite"></div></div></section>
+
+<section id="skills"><div class="w"><h2>Skills</h2><p class="mut">Skills I'm developing or can demonstrate through these projects. No proficiency levels are claimed.</p>
+<div class="g4" id="sk"></div></div></section>
+
+<section id="contact"><div class="w"><h2>Resume and Contact</h2>
+<div id="resume"><h3 style="margin:10px 0">Resume</h3>
+<p>Product-focused resume: summary, skills, case studies, projects, experience and education (MCA 2024 to 2026; BSc Computer Science 2021 to 2023).</p><a class="btn p" href="mailto:ananthukrishnan505@gmail.com?subject=Resume%20request">Request my resume by email</a></div>
+<h3 style="margin:24px 0 10px">Let's connect</h3>
+<p>I'd welcome conversations with recruiters and product professionals about APM, junior PM, product analyst, and product operations roles.</p>
+<p>Email: <a href="mailto:ananthukrishnan505@gmail.com">ananthukrishnan505@gmail.com</a></p>
+<p>LinkedIn: <a href="https://linkedin.com/in/ananthukrishnan1711" target="_blank" rel="noopener">linkedin.com/in/ananthukrishnan1711</a></p>
+<p>GitHub: <a href="https://github.com/Ananthu-4" target="_blank" rel="noopener">github.com/Ananthu-4</a></p></div></section>
+</main>
+<footer><div class="w">© Ananthu Krishnan. Portfolio of concept projects; no professional experience, user metrics or awards are claimed. <a href="#home">Back to top</a></div></footer>
+<script>
+const $=s=>document.querySelector(s);
+const SEC=["Overview","Problem","Research","Insights","Opportunity","Strategy","Prioritization","Execution","Measurement","Risks and learnings"];
+const C=[
+{id:"remind",t:"Never Miss an Assignment",tag:"WhatsApp Assignment Reminder",focus:"User experience and engagement",st:"Concept. No user research has been run yet.",bars:[40,70,55,85,60],
+S:{
+"Overview":["Product: a proposed reminder feature for WhatsApp class groups.","Role: product thinker (problem framing, research plan, requirements).","Type: self-initiated concept. Status: concept stage; a third-party prototype would be separate from a native WhatsApp feature."],
+"Problem":["Hypothesis: students miss deadlines because assignment details get buried in busy group chats, announcements repeat, and dates are forgotten.","Affected: students (college and school), teachers, class representatives.","Why it matters: missed work affects grades and creates repeated follow-up work for teachers."],
+"Research":["Plan: 8 to 10 interviews with students, 3 to 5 with teachers or class reps.","Sample questions: How do you track deadlines today? Describe the last time you missed one. What did you do when a teacher's message got buried? What reminders do you already trust or ignore?","Competitive scan to do: calendar apps, Google Classroom, pinned messages, existing WhatsApp bots."],
+"Insights":["<span class=flag>Assumptions, not findings</span>","A1: Missed deadlines are often due to lost information rather than avoidance.","A2: Students would opt in to private reminders.","A3: Teachers will spend 10 seconds to structure an announcement.","Each assumption has a test in the research plan."],
+"Opportunity":["Make the official deadline easy to find and hard to miss, without adding group noise."],
+"Strategy":["Personas (hypothetical): a busy undergraduate juggling six courses; a class representative who re-posts deadlines weekly.","Value: students get timely private nudges; teachers announce once.","Goals: fewer missed deadlines, low opt-out."],
+"Prioritization":["MVP = convert a message into a reminder, edit deadline, private reminders, snooze (1 or 2 hours).","Later: edit or cancel notifications, duplicate detection.","Trade-off: more reminders raise reach but also fatigue, so the default is few and user-adjustable.","TABLE:Feature|Impact|Effort|Decision;Message to reminder|High|Med|MVP;Snooze|Med|Low|MVP;Edit/cancel alerts|Med|Med|v2;Duplicate flagging|Low|High|Later"],
+"Execution":["Flow: teacher long-presses a message, taps 'Make reminder', confirms topic, details and date; students receive a private nudge, then Done or Snooze.","Story: As a student, I want a reminder the day before a deadline so I can plan my work. Acceptance: reminder arrives once, in my timezone, and respects my notification settings; I can opt out.","Story: As an authorized admin, I want to edit a deadline so students are notified of the change. Acceptance: only admins can edit; every affected student is notified once.","Wireframes and clickable prototype: [add Figma link when ready]"],
+"Measurement":["Reminders acknowledged (acknowledged / sent).","On-time submission rate (needs a baseline from testing).","Opt-out rate (guardrail).","User-reported usefulness (1 to 5 survey).","No improvement is claimed until tested."],
+"Risks and learnings":["WhatsApp platform and API limits are unexplored. Feasibility must be checked before any claim of implementation.","Consent, reminder fatigue, timezones, duplicate reminders and admin permissions need design.","Next: run interviews, then a small prototype test with one class."]}},
+{id:"venture",t:"VentureBridge",tag:"Startup Capital and Entrepreneur Platform",focus:"Marketplace strategy, trust, business models",st:"Concept. Research and competitor analysis are planned, not done.",bars:[55,35,80,50,70],
+S:{
+"Overview":["Product: a proposed platform connecting aspiring entrepreneurs with investors, co-founders, mentors and other founders.","Role: product thinker (strategy, MVP, PRD). Type: self-initiated concept. Status: concept stage."],
+"Problem":["Hypothesis: founders with promising ideas struggle to find suitable co-founders, funding, mentors, or a credible way to present their ideas.","Segment to start with: early-stage founders in one region and industry."],
+"Research":["Plan: interview founders, angel investors and mentors about how they currently find each other.","Map the current journey: idea, network search, pitch, intro, diligence.","Compare alternatives: LinkedIn, AngelList-style platforms, incubators, founder communities (to be researched, not yet assessed)."],
+"Insights":["<span class=flag>Assumptions, not findings</span>","Founders value warm intros more than cold search.","Investors want pre-filtered, complete proposals.","Trust is the main adoption barrier for both sides."],
+"Opportunity":["Structured, permission-based introductions that raise match quality for both sides."],
+"Strategy":["Founders: visibility and credible intros. Investors: qualified deal flow. Co-founders and mentors: relevant matches.","Hypotheses for revenue: subscriptions, premium tools, verified networking services.","No guarantee of funding or partnerships is implied."],
+"Prioritization":["MVP: founder profiles, structured submissions, filters (industry, geography, stage), request-an-intro flow, basic verification.","Cold-start approach: begin with one niche and recruit a small curated investor group first.","TABLE:Feature|Value|Risk|Decision;Founder profile|High|Low|MVP;Intro requests|High|Med|MVP;Verification|High|High|MVP-lite;NDA workflow|Med|High|Later"],
+"Execution":["Onboarding: founders add stage and idea summary; investors add thesis and verification details.","Story: As a founder, I want to request a private intro so my idea is shared only with consent. Acceptance: details stay hidden until the investor accepts.","Story: As an investor, I want filters by stage and industry so I see relevant proposals only.","PRD excerpt: Goal, users, scope, non-goals, metrics. Full PRD: [add link]"],
+"Measurement":["Founder profile completion rate.","Qualified introductions per active founder.","Introduction-to-meeting conversion.","Repeat engagement and user-reported match quality."],
+"Risks and learnings":["Cold start, fake investors and fraudulent founders, thin proposals, and idea leakage.","An NDA is a contract, not a guarantee. It cannot prevent all misuse.","Safeguards: verification signals, reporting, moderation, permission-based sharing.","Next: validate demand with interviews before building anything."]}},
+{id:"safe",t:"SafeRoute",tag:"Built-In Disaster Safety System",focus:"Public safety, accessibility, high-stakes decisions",st:"Concept, not an operational emergency service.",bars:[75,45,60,90,40],
+S:{
+"Overview":["Product: a proposed emergency-safety layer in smartphones, built with phone makers, telecom operators and disaster authorities.","Role: product thinker. Status: concept. This is not an operational emergency service."],
+"Problem":["Hypothesis: in floods, earthquakes, cyclones and landslides, people may struggle to get reliable warnings, safe routes, shelter locations, and ways to confirm their safety, especially with poor connectivity.","Affected: general public, older adults, people with disabilities, regional-language speakers."],
+"Research":["Plan: study existing government alert services; interview people who lived through disasters (with care); talk to emergency responders if possible.","Journey to map: preparation, warning, response, recovery.","Usability test: do users understand an alert and its action correctly?"],
+"Insights":["<span class=flag>Assumptions, not findings</span>","Alerts fail when unclear, not only when late.","People trust official sources but need clear next steps.","Check-ins matter to families as much as the person in danger."],
+"Opportunity":["Connect official alerts to clear, practical actions, with low-data and offline guidance."],
+"Strategy":["Value: clear severity, recommended action, verified shelters and routes.","Principle: only publish what authoritative, current data supports.","Goal: faster understanding and action."],
+"Prioritization":["MVP: location-based official alerts, severity and action, SOS and trusted-contact check-in, offline preparedness guide, regional languages.","Later: affected-road maps, verified shelter map.","Trade-off: wrong evacuation advice is worse than none, so routes ship only with verified live data.","TABLE:Feature|Safety value|Dependency|Decision;Official alerts|High|Telecom/OS|MVP;Check-ins|High|Low|MVP;Offline guide|High|Low|MVP;Evacuation routes|High|Gov. data|Later"],
+"Execution":["Alert design: severity color plus text and icon, one action in the first line, large type, audio support.","Story: As a resident, I want an alert in my language telling me what to do now. Acceptance: severity, action and source visible without scrolling.","Dependencies: OS alert channels, telecom cell-broadcast, government data feeds.","Prototype link: [add when ready]"],
+"Measurement":["Alert delivery and acknowledgment rates.","Time to understand the recommended action.","Check-in completion.","Comprehension in prototype usability tests."],
+"Risks and learnings":["An ordinary app cannot guarantee delivery when a device has no connectivity.","Misinformation, privacy of location data, battery use, and accessibility are core risks.","Evacuation advice needs verified, current information.","Next: test alert comprehension with a small, diverse group."]}}];
+const SK={"Product Management":["Problem discovery","User stories and requirements","PRDs and acceptance criteria","Feature prioritization","Product roadmaps","Product metrics and experimentation","Jira, Notion, Confluence, Agile/Scrum"],"UX and Design":["Figma","User personas and journey mapping","Wireframing and prototyping","Information architecture","Usability testing (developing)"],"Data and Analytics":["SQL","Excel","KPI definition","Funnel analysis","Basic product analytics","Market and competitor research","Google Analytics and Mixpanel (conceptual familiarity)"],"Technical Foundation":["Python, Java, JavaScript, HTML, CSS","React, Django, Spring Boot","MySQL, MongoDB","Git and GitHub","Technical collaboration with engineering teams"]};
+const FL=[["Understand the problem","Define who has it, how often, and what it costs them, in a sentence."],["Research users","Interview, observe, and review alternatives before proposing anything."],["Identify opportunities","Spot patterns and pick the problem worth solving first."],["Prioritize solutions","Weigh impact, effort and risk. Decide what's out as deliberately as what's in."],["Prototype","Make the idea tangible with flows and wireframes, cheaply."],["Test assumptions","List what must be true, then test the riskiest assumption first."],["Measure outcomes","Choose metrics before launch, including guardrails."],["Iterate","Feed results back into the problem statement."]];
+$("#cards").innerHTML=C.map(c=>`<article class="card"><div class="th" aria-hidden="true">${c.bars.map(b=>`<s style="height:${b}%"></s>`).join("")}</div><span class="pill">${c.focus}</span><h3>${c.t}</h3><p class="mut" style="margin:0">${c.tag}</p><p style="font-size:.88rem;margin:0">${c.st}</p><button class="btn" data-id="${c.id}">Read case study</button></article>`).join("");
+function body(v){return v.map(x=>x.startsWith("TABLE:")?tbl(x.slice(6)):x.startsWith("<span")?x:`<li>${x}</li>`).join("").replace(/(<li>.*?<\/li>)+/gs,m=>`<ul>${m}</ul>`)}
+function tbl(s){const r=s.split(";").map(x=>x.split("|"));return `<div class="tw"><table><tr>${r[0].map(h=>`<th>${h}</th>`).join("")}</tr>${r.slice(1).map(x=>`<tr>${x.map(d=>`<td>${d}</td>`).join("")}</tr>`).join("")}</table></div>`}
+function open(id,k=0){const c=C.find(x=>x.id==id);const cs=$("#cs");cs.style.display="block";
+cs.innerHTML=`<h2>${c.t}</h2><p class="mut">${c.tag}</p><div class="tabs" role="tablist">${SEC.map((s,i)=>`<button role="tab" aria-selected="${i==k}" data-k="${i}">${s}</button>`).join("")}</div><div class="panel" role="tabpanel"><h3 style="margin-bottom:12px">${SEC[k]}</h3>${body(c.S[SEC[k]])}</div>`;
+cs.dataset.id=id;if(k==0){cs.scrollIntoView({behavior:"smooth"});cs.focus({preventScroll:true})}}
+$("#cards").onclick=e=>{const b=e.target.closest("button");if(b)open(b.dataset.id)};
+$("#cs").onclick=e=>{const b=e.target.closest("[data-k]");if(b)open($("#cs").dataset.id,+b.dataset.k)};
+$("#flow").innerHTML=FL.map((f,i)=>`<button data-i="${i}" aria-pressed="${i==0}">${f[0]}</button>`).join("");
+function step(i){document.querySelectorAll("#flow button").forEach((b,j)=>b.setAttribute("aria-pressed",j==i));$("#fd").innerHTML=`<b>${FL[i][0]}</b><p style="margin:6px 0 0">${FL[i][1]}</p>`}
+$("#flow").onclick=e=>{const b=e.target.closest("button");if(b)step(+b.dataset.i)};step(0);
+$("#sk").innerHTML=Object.entries(SK).map(([k,v])=>`<div class="card"><h3>${k}</h3><ul>${v.map(x=>`<li>${x}</li>`).join("")}</ul></div>`).join("");
+$("#th").onclick=()=>{const r=document.documentElement,d=getComputedStyle(r).getPropertyValue("--bg").trim()=="#0f0f13";r.dataset.theme=d?"light":"dark"};
+</script></body></html>
